@@ -100,25 +100,27 @@ bool rentACar(
     int carType = 0) // function declaration with random number of arguments,
                      // arbitrary number of arguments have default value
 {
-  ignoreUnused(rentalDuration, carType); // passing each function parameter to
+    ignoreUnused(rentalDuration, carType); // passing each function parameter to
                                          // the ignoreUnused() function
-  return {}; // if your function returns something other than void, add 'return
+    return {}; // if your function returns something other than void, add 'return
              // {};' at the end of it.
 }
 
 /*
  1)
  */
-float measureHeight(float Height, int amountPatients = 5) {
-  ignoreUnused(Height, amountPatients);
-  return {};
+float measureHeight(float height, int amountPatients = 5) 
+{
+    ignoreUnused(height, amountPatients);
+    return {};
 }
 
 /*
  2)
  */
-void makeBread(int amountOfBread, bool isFresh = true) {
-  ignoreUnused(amountOfBread, isFresh);
+void makeBread(int amountOfBread, bool isFresh = true) 
+{
+     ignoreUnused(amountOfBread, isFresh);
 }
 
 /*
@@ -126,64 +128,72 @@ void makeBread(int amountOfBread, bool isFresh = true) {
  */
 
 int createSongs(int amountOfSongs, bool elecGuitar = true,
-                bool elecKeyboard = false) {
-  ignoreUnused(amountOfSongs, elecGuitar, elecKeyboard);
-  return {};
+                bool elecKeyboard = false) 
+{
+    ignoreUnused(amountOfSongs, elecGuitar, elecKeyboard);
+    return {};
 }
 /*
  4)
  */
 
 char firstLetterOfName(char firstLetter, int amountOfNames,
-                       bool lastName = false) {
-  ignoreUnused(firstLetter, amountOfNames, lastName);
-  return {};
+                       bool lastName = false) 
+{
+    ignoreUnused(firstLetter, amountOfNames, lastName);
+    return {};
 }
 
 /*
  5)
  */
-double calculateMass(double Volume, double Density, bool is Solid = true) {
-  ignoreUnused(Volume, Density, isSolid);
-  return {};
+double calculateMass(double volume, double density, bool isSolid = true) 
+{
+    ignoreUnused(volume, density, isSolid);
+    return {};
 }
 
 /*
  6)
  */
-void goForAWalk(int Distance, bool Morning = true, bool Pet = false) {
-  ignoreUnused(Distance, Morning, Pet);
+void goForAWalk(int distance, bool morning = true, bool pet = false) 
+{
+    ignoreUnused(distance, morning, pet);
 }
 /*
  7)
  */
 int howManyDrinks(int amountOfDrinks, int amountOfFriends,
-                  bool isAlcohol = true) {
-  ignoreUnused(amountOfDrinks, amountOfFriends, isAlcohol);
-  return {};
+                  bool isAlcohol = true) 
+{
+    ignoreUnused(amountOfDrinks, amountOfFriends, isAlcohol);
+    return {};
 }
 /*
  8)
  */
 
-int getPersonalInfo(int Age, char Gender, bool isMarried = false) {
-  ignoreUnused(Age, Gender, isMarried);
-  return {};
+int getPersonalInfo(int age, char gender, bool isMarried = false) 
+{
+    ignoreUnused(age, gender, isMarried);
+    return {};
 }
 /*
  9)
  */
 double getCheck(double amountOfMoney, bool isCash, bool isCreditCard,
-                float Tip) {
-  ignoreUnused(amountOfMoney, isCash, isCreditCard, Tip);
-  return {};
+                float tip) 
+{
+    ignoreUnused(amountOfMoney, isCash, isCreditCard, tip);
+    return {};
 }
 /*
  10)
  */
 void goToRestaurant(bool tableReserved = true, int amountOfPeople = 2,
-                    bool isFamily = false) {
-  ignoreUnused(tableReserved, amountOfPeople, isFamily);
+                    bool isFamily = false) 
+{
+    ignoreUnused(tableReserved, amountOfPeople, isFamily);
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -207,11 +217,11 @@ int main() {
   auto carRented = rentACar(6, 2);
 
   // 1)
-
+  auto measuredHeight = measureHeight(1.75f);
   // 2)
-
+  makeBread(5);   
   // 3)
-
+  auto createdSongs =
   // 4)
 
   // 5)
