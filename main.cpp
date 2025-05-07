@@ -109,43 +109,82 @@ bool rentACar(
 /*
  1)
  */
+float measureHeight(float Height, int amountPatients = 5) {
+  ignoreUnused(Height, amountPatients);
+  return {};
+}
 
 /*
  2)
  */
+void makeBread(int amountOfBread, bool isFresh = true) {
+  ignoreUnused(amountOfBread, isFresh);
+}
 
 /*
  3)
  */
 
+int createSongs(int amountOfSongs, bool elecGuitar = true,
+                bool elecKeyboard = false) {
+  ignoreUnused(amountOfSongs, elecGuitar, elecKeyboard);
+  return {};
+}
 /*
  4)
  */
 
+char firstLetterOfName(char firstLetter, int amountOfNames,
+                       bool lastName = false) {
+  ignoreUnused(firstLetter, amountOfNames, lastName);
+  return {};
+}
+
 /*
  5)
  */
+double calculateMass(double Volume, double Density, bool is Solid = true) {
+  ignoreUnused(Volume, Density, isSolid);
+  return {};
+}
 
 /*
  6)
  */
-
+void goForAWalk(int Distance, bool Morning = true, bool Pet = false) {
+  ignoreUnused(Distance, Morning, Pet);
+}
 /*
  7)
  */
-
+int howManyDrinks(int amountOfDrinks, int amountOfFriends,
+                  bool isAlcohol = true) {
+  ignoreUnused(amountOfDrinks, amountOfFriends, isAlcohol);
+  return {};
+}
 /*
  8)
  */
 
+int getPersonalInfo(int Age, char Gender, bool isMarried = false) {
+  ignoreUnused(Age, Gender, isMarried);
+  return {};
+}
 /*
  9)
  */
-
+double getCheck(double amountOfMoney, bool isCash, bool isCreditCard,
+                float Tip) {
+  ignoreUnused(amountOfMoney, isCash, isCreditCard, Tip);
+  return {};
+}
 /*
  10)
  */
-
+void goToRestaurant(bool tableReserved = true, int amountOfPeople = 2,
+                    bool isFamily = false) {
+  ignoreUnused(tableReserved, amountOfPeople, isFamily);
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
