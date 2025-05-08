@@ -114,7 +114,7 @@ bool rentACar(
 float measureHeight(float height, int amountPatients = 5) 
 {
     ignoreUnused(height, amountPatients);
-    return {};
+    return height;
 }
 
 /*
@@ -213,19 +213,19 @@ void goToRestaurant(bool tableReserved = true, int amountOfPeople = 2,
  Wait for my code review.
  */
 
-/*
+
 int main() 
 {
   
   // example of calling that function, storing the value, and passing it to
   // ignoreUnused at the end of main()
-    //auto carRented = rentACar(6, 2);
-    //ignoreUnused(carRented);
+    auto carRented = rentACar(6, 2);
+    ignoreUnused(carRented);
 
   // 1)
-    //auto measuredHeight = measureHeight(1.75f);
-    //std::cout << measuredHeight << std::endl;
-    //ignoreUnused(measuredHeight);
+    auto measuredHeight = measureHeight(1.75f);
+    //cout << measuredHeight << endl;
+    ignoreUnused(measuredHeight);
 
     
   // 2)
@@ -256,10 +256,7 @@ int main()
     std::cout << "good to go!" << std::endl;
 
     return 0;
-}*/
-
-
-int main()
-{
-  cout << "Hello World!";
 }
+
+
+
