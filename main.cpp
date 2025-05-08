@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 template <typename... T> void ignoreUnused(T &&...) {}
 
@@ -212,7 +213,10 @@ void goToRestaurant(bool tableReserved = true, int amountOfPeople = 2,
  Wait for my code review.
  */
 
-int main() {
+/*
+int main() 
+{
+  
   // example of calling that function, storing the value, and passing it to
   // ignoreUnused at the end of main()
     //auto carRented = rentACar(6, 2);
@@ -223,7 +227,7 @@ int main() {
     //std::cout << measuredHeight << std::endl;
     //ignoreUnused(measuredHeight);
 
-    /*
+    
   // 2)
      makeBread(5);   
   // 3)
@@ -248,11 +252,14 @@ int main() {
     ignoreUnused(bill);
   // 10)
     goToRestaurant();
-    */
-    printf("Hello\n");
+  
     std::cout << "good to go!" << std::endl;
-   // std::cin.get(); // Wait for user input before closing
 
-    std::cerr << "Error message" << std::endl;
-  return 0;
+    return 0;
+}*/
+
+
+int main()
+{
+  cout << "Hello World!";
 }
