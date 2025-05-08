@@ -215,12 +215,12 @@ void goToRestaurant(bool tableReserved = true, int amountOfPeople = 2,
 int main() {
   // example of calling that function, storing the value, and passing it to
   // ignoreUnused at the end of main()
-    auto carRented = rentACar(6, 2);
-    ignoreUnused(carRented);
+    //auto carRented = rentACar(6, 2);
+    //ignoreUnused(carRented);
 
   // 1)
-    auto measuredHeight = measureHeight(1.75f);
-    std::cout << measuredHeight << std::endl;
+    //auto measuredHeight = measureHeight(1.75f);
+    //std::cout << measuredHeight << std::endl;
     //ignoreUnused(measuredHeight);
 
     /*
@@ -249,8 +249,10 @@ int main() {
   // 10)
     goToRestaurant();
     */
-  
-  std::cout << "good to go!" << std::endl;
-  std::cin.get(); // Wait for user input before closing
+    printf("Hello\n");
+    std::cout << "good to go!" << std::endl;
+   // std::cin.get(); // Wait for user input before closing
+
+    std::cerr << "Error message" << std::endl;
   return 0;
 }
