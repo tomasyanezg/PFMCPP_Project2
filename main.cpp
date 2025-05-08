@@ -60,6 +60,7 @@ the 'auto' keyword. c) pass the local variables to ignoreUnused() as you did in
  */
 
 // 2)
+/*
 void variableDeclarations() {
   // example:
   int number =
@@ -87,8 +88,8 @@ void variableDeclarations() {
   bool dc = true;
 
   ignoreUnused(
-      number); // passing each variable declared to the ignoreUnused() function
-}
+      number, a, b, c, aa, ab, ac, ba, bb, bc, ca, cb, cc, da, db, dc); // passing each variable declared to the ignoreUnused() function
+} */
 
 /*
  10 functions
@@ -214,29 +215,41 @@ void goToRestaurant(bool tableReserved = true, int amountOfPeople = 2,
 int main() {
   // example of calling that function, storing the value, and passing it to
   // ignoreUnused at the end of main()
-  auto carRented = rentACar(6, 2);
+    auto carRented = rentACar(6, 2);
+    ignoreUnused(carRented);
 
   // 1)
-  auto measuredHeight = measureHeight(1.75f);
+    auto measuredHeight = measureHeight(1.75f);
+    std::cout << measuredHeight << std::endl;
+    //ignoreUnused(measuredHeight);
+
+    /*
   // 2)
-  makeBread(5);   
+     makeBread(5);   
   // 3)
-  auto createdSongs =
+    auto createdSongs = createSongs(10);
+    ignoreUnused(createdSongs);
   // 4)
-
+    auto firstLetter = firstLetterOfName('a', 2);
+    ignoreUnused(firstLetter);
   // 5)
-
+    auto calculatedMass = calculateMass(300.0, 10.5);
+    ignoreUnused(calculatedMass);
   // 6)
-
+    goForAWalk(5);
   // 7)
-
+    auto barDrinks = howManyDrinks(5, 10);
+    ignoreUnused(barDrinks);
   // 8)
-
+    auto personalInfo = getPersonalInfo(36, 'f');
+    ignoreUnused(personalInfo);
   // 9)
-
+    auto bill = getCheck(256.68, false, true, 22);
+    ignoreUnused(bill);
   // 10)
-
-  ignoreUnused(carRented);
+    goToRestaurant();
+    */
+  
   std::cout << "good to go!" << std::endl;
   return 0;
 }
