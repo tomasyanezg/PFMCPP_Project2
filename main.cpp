@@ -62,34 +62,33 @@ the 'auto' keyword. c) pass the local variables to ignoreUnused() as you did in
 
 // 2)
 
-void variableDeclarations() {
-  // example:
-  int number =
-      2; // declaration of a variable named "number", that uses the primitive
+void variableDeclarations() 
+{
+    // example:
+    int number = 2; // declaration of a variable named "number", that uses the primitive
          // type 'int', and the variable's initial value is '2'
 
-  int a = 1;
-  int b = 2;
-  int c = 3;
+    int a = 1;
+    int b = 2;
+    int c = 3;
 
-  float aa = 1.1f;
-  float ab = 2.5666f;
-  float ac = 3.14f;
+    float aa = 1.1f;
+    float ab = 2.5666f;
+    float ac = 3.14f;
 
-  double ba = 1.1;
-  double bb = 3.222;
-  double bc = 92.999;
+    double ba = 1.1;
+    double bb = 3.222;
+    double bc = 92.999;
 
-  char ca = 'c';
-  char cb = 'x';
-  char cc = 'z';
+    char ca = 'c';
+    char cb = 'x';
+    char cc = 'z';
 
-  bool da = true;
-  bool db = false;
-  bool dc = true;
+    bool da = true;
+    bool db = false;
+    bool dc = true;
 
-  ignoreUnused(
-      number, a, b, c, aa, ab, ac, ba, bb, bc, ca, cb, cc, da, db, dc); // passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, a, b, c, aa, ab, ac, ba, bb, bc, ca, cb, cc, da, db, dc); // passing each variable declared to the ignoreUnused() function
 } 
 
 /*
@@ -97,15 +96,10 @@ void variableDeclarations() {
  example:
  note: this example shows the result after completing steps 3-8
  */
-bool rentACar(
-    int rentalDuration,
-    int carType = 0) // function declaration with random number of arguments,
-                     // arbitrary number of arguments have default value
-{
-    ignoreUnused(rentalDuration, carType); // passing each function parameter to
-                                         // the ignoreUnused() function
-    return {}; // if your function returns something other than void, add 'return
-             // {};' at the end of it.
+bool rentACar(int rentalDuration, int carType = 0)  // function declaration with random number of arguments, arbitrary number of arguments have default value
+{   
+    ignoreUnused(rentalDuration, carType);          // passing each function parameter to the ignoreUnused() function
+    return {};                                      // if your function returns something other than void, add 'return                                                                                                           // {};' at the end of it.
 }
 
 /*
@@ -220,39 +214,37 @@ int main()
   // example of calling that function, storing the value, and passing it to
   // ignoreUnused at the end of main()
     auto carRented = rentACar(6, 2);
-    ignoreUnused(carRented);
 
   // 1)
     auto measuredHeight = measureHeight(1.75f);
     //cout << measuredHeight << endl;
-    ignoreUnused(measuredHeight);
-
-    
   // 2)
-     makeBread(5);   
+    makeBread(5);   
+  
   // 3)
     auto createdSongs = createSongs(10);
-    ignoreUnused(createdSongs);
+  
   // 4)
     auto firstLetter = firstLetterOfName('a', 2);
-    ignoreUnused(firstLetter);
+   
   // 5)
     auto calculatedMass = calculateMass(300.0, 10.5);
-    ignoreUnused(calculatedMass);
+   
   // 6)
     goForAWalk(5);
   // 7)
     auto barDrinks = howManyDrinks(5, 10);
-    ignoreUnused(barDrinks);
+   
   // 8)
     auto personalInfo = getPersonalInfo(36, 'f');
-    ignoreUnused(personalInfo);
+   
   // 9)
     auto bill = getCheck(256.68, false, true, 22);
-    ignoreUnused(bill);
+   
   // 10)
     goToRestaurant();
-  
+
+    ignoreUnused(carRented, measuredHeight, createdSongs, firstLetter, calculatedMass, barDrinks, personalInfo, bill);
     std::cout << "good to go!" << std::endl;
 
     return 0;
