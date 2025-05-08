@@ -61,7 +61,7 @@ the 'auto' keyword. c) pass the local variables to ignoreUnused() as you did in
  */
 
 // 2)
-/*
+
 void variableDeclarations() {
   // example:
   int number =
@@ -90,7 +90,7 @@ void variableDeclarations() {
 
   ignoreUnused(
       number, a, b, c, aa, ab, ac, ba, bb, bc, ca, cb, cc, da, db, dc); // passing each variable declared to the ignoreUnused() function
-} */
+} 
 
 /*
  10 functions
