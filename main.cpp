@@ -251,5 +251,6 @@ int main() {
     */
   
   std::cout << "good to go!" << std::endl;
+  std::cin.get(); // Wait for user input before closing
   return 0;
 }
